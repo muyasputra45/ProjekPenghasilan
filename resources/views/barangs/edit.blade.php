@@ -20,41 +20,31 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelKodebarang">Kode Barang</label></td>
-                        <td><input type="text" id="InputKodebarang" placeholder="Kode Barang" name="kode_barang" value="{{$barang->kode_barang ?? old('kode_barang')}}"disabled="true"></td>
+                        <td><label for="LabelKodeDriver">Kode Driver</label></td>
+                        <td><input type="text" id="InputKodeDriver" placeholder="Kode Driver" name="kode_driver" value="{{$barang->kode_driver ?? old('kode_driver')}}"disabled="true"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelNamabarang">Nama Barang</label></td>
-                        <td><input type="text" id="InputNamabarang" placeholder="Nama Barang" name="nama_barang" value="{{$barang->nama_barang ?? old('nama_barang')}}"></td>
+                        <td><label for="LabelNamaDriver">Nama Driver</label></td>
+                        <td><input type="text" id="InputNamaDriver" placeholder="Nama Driver" name="nama_driver" value="{{$barang->nama_driver ?? old('nama_driver')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelHargajual">Harga Jual</label></td>
-                        <td><input type="text" id="InputHarjual" placeholder="Harga Jual" name="harga_jual" value="{{$barang->harga_jual ?? old('harga_jual')}}"></td>
+                        <td><label for="LabelAlamatDriver">Alamat Driver</label></td>
+                        <td><input type="text" id="Input Alamat Driver" placeholder="Alamat Driver" name="alamat_driver" value="{{$barang->alamat_driver ?? old('alamat_driver')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelStokbarang">Stok Barang</label></td>
-                        <td><input type="text" id="InputStokbarang" placeholder="Stok Barang" name="stok_barang" value="{{$barang->stok_barang ?? old('stok_barang')}}"></td>
+                        <td><label for="NoTelpDriver">No Telepon</label></td>
+                        <td><input type="text" id="InputNoTelp" placeholder="No Telepon" name="notelp_driver" value="{{$barang->notelp_driver ?? old('notelp_driver')}}"></td>
                     </tr>
                    
-                    <tr>
-                    <td><label for="LabelSupplier">Supplier</label></td>
-                        <td>
-                            <select class="form-control" id="InputSupplier" name="id_supplier">
-                                <option></option>
-                                @foreach ($suppliers as $supplier)
-                                <option value="{{ $supplier->id }}"{{$supplier->id == $barang->id_supplier ? 'selected' : ''}}>{{$supplier->nama_supplier}}</option>
-                                @endforeach
-                            </select>
-</td>
                     </table>
                 </div>
  

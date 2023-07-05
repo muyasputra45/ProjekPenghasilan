@@ -20,10 +20,10 @@
                         <tr>
                             <!-- <th>Id Unit</th> -->
                             <th>No</th>
-                            <th>Tanggal Jual</th>
-                            <th>Id Barang</th>
-                            <th>Jumlah Barang</th>
-                            <th>Id Pembeli</th>
+                            <th>Tanggal Pemasukan</th>
+                            <th>Nama Driver</th>
+                            <th>Jumlah Pemasukan</th>
+                            
                             <th>Aksi</th>
                         </tr>
                         </thead>
@@ -31,10 +31,10 @@
                         @foreach($penjualans as $key => $penjualan)
                             <tr>
                                 <td>{{$key+1}}</td>
-                                <td>{{$penjualan->tanggal_jual}}</td>
-                                <td>{{$penjualan->id_barang}}{{$penjualan->nama_barang}}</td>
-                                <td>{{$penjualan->jumlah_barang}}</td>
-                                <td>{{$penjualan->id_pembeli}}{{$penjualan->nama_pembeli}}</td>
+                                <td>{{$penjualan->tanggal_pemasukan}}</td>
+                                <td>{{$penjualan->nama_driver}}</td>
+                                <td>Rp. {{$penjualan->penghasilan_driver}}</td>
+
                                 <td>
                                     <a href="{{route('penjualans.edit', $penjualan)}}" class="fas fa-edit fa-lg"></a>
                 

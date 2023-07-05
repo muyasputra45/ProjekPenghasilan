@@ -19,44 +19,33 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelKodebarang">Kode Barang</label></td>
-                        <td><input type="text" id="InputKodebarang" placeholder="Kode Barang" name="kode_barang" value="{{old('kode_barang')}}"></td>
+                        <td><label for="LabelKodeDriver">Kode Driver</label></td>
+                        <td><input type="text" id="InputKodeDriver" placeholder="Kode Driver" name="kode_driver" value="{{old('kode_driver')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelNamabarang">Nama Barang</label></td>
-                        <td><input type="text" id="InputNamabarang" placeholder="Nama Barang" name="nama_barang" value="{{old('nama_barang')}}"></td>
+                        <td><label for="LabelNamaDriver">Nama Driver</label></td>
+                        <td><input type="text" id="InputNamaDriver" placeholder="Nama Driver" name="nama_driver" value="{{old('nama_driver')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelHargajual">Harga Jual</label></td>
-                        <td><input type="text" id="InputHargajual" placeholder="Harga Jual" name="harga_jual" value="{{old('harga_jual')}}"></td>
+                        <td><label for="LabelAlamatDriver">Alamat Driver</label></td>
+                        <td><input type="text" id="InputAlamat" placeholder="Alamat Driver" name="alamat_driver" value="{{old('alamat_driver')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelStokbarang">Stok Barang</label></td>
-                        <td><input type="text" id="InputStokbarang" placeholder="Stok Barang" name="stok_barang" value="{{old('stok_barang')}}"></td>
+                        <td><label for="NoTelpDriver">No Telepon</label></td>
+                        <td><input type="text" id="InputNoTelp" placeholder="No Telepon" name="notelp_driver" value="{{old('notelp_driver')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
-                    <tr>
-                    <td><label for="LabelSupplier">Supplier</label></td>
-                        <td>
-                            <select class="form-control" id="InputSupplier" name="id_supplier">
-                                <option></option>
-                                @foreach ($suppliers as $supplier)
-                                <option value="{{ $supplier->id }}">{{$supplier->nama_supplier}}</option>
-                                @endforeach
-                            </select>
-</td>
-</tr>
                     </table>
  
                 </div>

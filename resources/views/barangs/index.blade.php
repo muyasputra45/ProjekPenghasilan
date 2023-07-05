@@ -20,11 +20,10 @@
                         <tr>
                             <!-- <th>Id Unit</th> -->
                             <th>No</th>
-                            <th>Kode Barang</th>
-                            <th>Nama Barang</th>
-                            <th>Harga Jual</th>
-                            <th>Stok Barang</th>
-                            <th>Supplier</th>
+                            <th>Kode Driver</th>
+                            <th>Nama Driver</th>
+                            <th>Alamat Driver</th>
+                            <th>No Telepon</th>
                             <th>Aksi</th>
                         </tr>
                         </thead>
@@ -32,11 +31,11 @@
                         @foreach($barangs as $key => $barang)
                             <tr>
                                 <td>{{$key+1}}</td>
-                                <td>{{$barang->kode_barang}}</td>
-                                <td>{{$barang->nama_barang}}</td>
-                                <td>{{$barang->harga_jual}}</td>
-                                <td>{{$barang->stok_barang}}</td>
-                                <td>{{$barang->nama_supplier}}</td>
+                                <td>{{$barang->kode_driver}}</td>
+                                <td>{{$barang->nama_driver}}</td>
+                                <td>{{$barang->alamat_driver}}</td>
+                                <td>{{$barang->notelp_driver}}</td>
+                           
                                 <td>
                                     <a href="{{route('barangs.edit', $barang)}}" class="fas fa-edit fa-lg"></a>
                 

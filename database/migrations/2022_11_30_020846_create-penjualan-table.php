@@ -15,10 +15,9 @@ class CreatePenjualanTable extends Migration
     {
         Schema::create('penjualan', function (Blueprint $table) {
             $table->id();
-            $table->date('tanggal_jual');
+            $table->date('tanggal_pemasukan');
             $table->integer('id_barang');
-            $table->integer('jumlah_barang');
-            $table->integer('id_pembeli');
+            $table->decimal('penghasilan_driver',18,2);
             $table->timestamps();
     });
     }

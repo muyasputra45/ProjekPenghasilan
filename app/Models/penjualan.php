@@ -11,9 +11,8 @@ class penjualan extends Model
     use HasFactory;
     protected $fillable=[
 
-        'tanggal_jual',
+        'tanggal_pemasukan',
         'id_barang',
-        'jumlah_barang',
-        'id_pembeli',
+        'penghasilan_driver',
     ];
 }

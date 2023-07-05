@@ -20,19 +20,19 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelTanggaljual">Tanggal Jual</label></td>
-                        <td><input type="date" id="InputTanggaljual" placeholder="Tanggal Jual" name="tanggal_jual" value="{{$penjualan->tanggal_jual ?? old('tanggal_jual')}}"></td>
+                        <td><label for="LabelTanggalPemasukan">Tanggal Pemasukan</label></td>
+                        <td><input type="date" id="InputTanggalPemasukan" placeholder="Tanggal Pemasukan" name="tanggal_pemasukan" value="{{$penjualan->tanggal_pemasukan ?? old('tanggal_pemasukan')}}"></td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                    <td><label for="LabelIdbarang">Id Barang</label></td>
+                    <td><label for="LabelIdbarang">Nama Driver/label></td>
                         <td>
                             <select class="form-control" id="InputIdbarang" name="id_barang">
                                 <option></option>
                                 @foreach ($barangs as $barang)
-                                <option value="{{ $barang->id }}"{{$barang->id == $penjualan->id_barang ? 'selected' : ''}}>{{$barang->nama_barang}}</option>
+                                <option value="{{ $barang->id }}"{{$barang->id == $penjualan->id_barang ? 'selected' : ''}}>{{$barang->nama_driver}}</option>
                                 @endforeach
                             </select>
 </td>
@@ -41,20 +41,11 @@
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><label for="LabelJumlahbarang">Jumlah Barang</label></td>
-                        <td><input type="text" id="InputJumlahbarang" placeholder="jumlah Barang" name="jumlah_barang" value="{{$penjualan->jumlah_barang ?? old('jumlah_barang')}}"></td>
+                        <td><label for="LabelPemasukan">Jumlah Pemasukan</label></td>
+                        <td><input type="text" id="InputPenghasilan" placeholder="Jumlah Pemasukan" name="penghasilan_driver" value="{{$penjualan->penghasilan_driver ?? old('penghasilan_driver')}}"></td>
                     </tr>
                    
-                    <tr>
-                    <td><label for="LabelIdpembeli">Id Pembeli</label></td>
-                        <td>
-                            <select class="form-control" id="InputIdpembeli" name="id_pembeli">
-                                <option></option>
-                                @foreach ($pembelis as $pembeli)
-                                <option value="{{ $pembeli->id }}">{{$pembeli->nama_pembeli}}</option>
-                                @endforeach
-                            </select>
-</td>
+                
                     </table>
                 </div>
  
